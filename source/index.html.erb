@@ -3,11 +3,20 @@ title: Le Wagon Middleman boilerplate
 ---
 
 
-  <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('background.jpg');">
+  <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.3) 0%, rgba(0,36,61,0.5) 55%), url('https://a0.muscache.com/im/pictures/96698740/65497b9a_original.jpg?aki_policy=xx_large');">
       <div class="banner-content">
-        <h1>Some Stuff</h1>
-        <p>Very cool stuff, useful and smart</p>
-        <%= link_to "GET IT", "#", class:"btn btn-primary btn-lg" %>
+        <h1>Welcome home</h1>
+        <p>Get your dream stay in one of our villas in St Barth</p>
+        <form action="" class="form-inline">
+          <input type="email" placeholder="checkin" class="form-control input-lg">
+          <input type="email" placeholder="checkout" class="form-control input-lg">
+          <select class="form-control input-lg">
+            <option value="1">1 guest</option>
+            <option value="2">2 guest</option>
+            <option value="3">3 guest</option>
+          </select>
+          <input type="submit" value="Let's go" class="btn btn-primary btn-lg">
+        </form>
       </div>
     </div>
 
@@ -105,6 +114,7 @@ title: Le Wagon Middleman boilerplate
     <div id="map" style="width: 100%; height: 400px;"></div>
 
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+    <!-- Will need to add the api key for it to work -->
 
     <script type="text/javascript">
     var myLatlng = new google.maps.LatLng(48.8655909, 2.378983);
