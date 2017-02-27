@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="container-team text-center">
+    <h2>Our team</h2>
+
+    <ul class="list-inline text-center">
+      <% ["romain", "anne", "seb"].each do |member| %>
+        <li>
+          <%= image_tag "#{member}.jpg", class:"img-circle", style:"width:100px" %>
+          <h3><%= member %></h3>
+        </li>
+      <% end %>
+    </ul>
+    <div class="container">
+      <%= link_to "contact@airbnb.com", "#" %>
+    </div>
+  </div>
+</div>

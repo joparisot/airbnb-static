@@ -8,3 +8,463 @@ title: Le Wagon Middleman boilerplate
     <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
   </p>
 </div>
+
+  <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('background.jpg');">
+      <div class="banner-content">
+        <h1>Some Stuff</h1>
+        <p>Very cool stuff, useful and smart</p>
+        <%= link_to "GET IT", "#", class:"btn btn-primary btn-lg" %>
+      </div>
+    </div>
+
+    <!-- Your features code -->
+    <div class="wrapper-features">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-6 col-lg-3 text-center">
+            <%= image_tag "images/globe.png" %>
+            <h3>Discover the world</h3>
+            <p>The earth is your new home</p>
+          </div>
+          <div class="col-xs-6 col-lg-3 text-center">
+            <%= image_tag "images/dollar.png" %>
+            <h3>Discover the world</h3>
+            <p>The earth is your new home</p>
+          </div>
+          <div class="col-xs-6 col-lg-3 text-center">
+          <%= image_tag "images/beer.png" %>
+            <h3>Discover the world</h3>
+            <p>The earth is your new home</p>
+          </div>
+          <div class="col-xs-6 col-lg-3 text-center">
+            <%= image_tag "images/heart.png" %>
+            <h3>Discover the world</h3>
+            <p>The earth is your new home</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Your cards code -->
+    <div class="wrapper-card">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-6 col-lg-3">
+            <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/card-paris.jpg');">
+              <div class="card-category">Popular</div>
+              <div class="card-description">
+                <h2>Some stuff</h2>
+                <p>Very cool stuff, useful and smart</p>
+              </div>
+              <%= image_tag "images/anne.jpg", class: "card-user avatar" %>
+              <%= link_to "", "#", class:"card-link" %>
+            </div>
+          </div>
+          <div class="col-xs-6 col-lg-3">
+            <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/card-paris.jpg');">
+              <div class="card-category">Popular</div>
+              <div class="card-description">
+                <h2>Some stuff</h2>
+                <p>Very cool stuff, useful and smart</p>
+              </div>
+              <%= image_tag "images/anne.jpg", class: "card-user avatar" %>
+              <%= link_to "", "#", class:"card-link" %>
+            </div>
+          </div>
+          <div class="col-xs-6 col-lg-3">
+            <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/card-paris.jpg');">
+              <div class="card-category">Popular</div>
+              <div class="card-description">
+                <h2>Some stuff</h2>
+                <p>Very cool stuff, useful and smart</p>
+              </div>
+              <%= image_tag "images/anne.jpg", class: "card-user avatar" %>
+              <%= link_to "", "#", class:"card-link" %>
+            </div>
+          </div>
+          <div class="col-xs-6 col-lg-3">
+            <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/card-paris.jpg');">
+              <div class="card-category">Popular</div>
+              <div class="card-description">
+                <h2>Some stuff</h2>
+                <p>Very cool stuff, useful and smart</p>
+              </div>
+              <%= image_tag "images/anne.jpg", class: "card-user avatar" %>
+              <%= link_to "", "#", class:"card-link" %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <!-- Your newsletter code -->
+    <div class="container">
+      <h2 class="text-center h2-padding-top">Get news from us</h2>
+      <p class="text-center">Leave us an email and get news from us!</p>
+      <form action="#" class="form-inline text-center form-action">
+        <input type="email" placeholder="your email" class="form-control">
+        <input type="submit" value="Let's go" class="btn btn-primary">
+      </form>
+    </div>
+
+    <!-- Your map code -->
+    <div id="map" style="width: 100%; height: 400px;"></div>
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+    <script type="text/javascript">
+    var myLatlng = new google.maps.LatLng(48.8655909, 2.378983);
+
+    var myOptions = {
+      zoom: 16,
+      center: myLatlng,
+      scrollwheel: false,
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      styles: [
+    {
+        "featureType": "all",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            },
+            {
+                "hue": "#ff7700"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative.country",
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "color": "#1d1d1d"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative.province",
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            },
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative.province",
+        "elementType": "labels.text.stroke",
+        "stylers": [
+            {
+                "color": "#ed5929"
+            },
+            {
+                "weight": "5.00"
+            },
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative.locality",
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "color": "#787878"
+            },
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative.locality",
+        "elementType": "labels.text.stroke",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            },
+            {
+                "visibility": "on"
+            },
+            {
+                "weight": "5.00"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative.neighborhood",
+        "elementType": "labels.text",
+        "stylers": [
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative.neighborhood",
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#2d2d2d"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative.neighborhood",
+        "elementType": "labels.text.stroke",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            },
+            {
+                "visibility": "on"
+            },
+            {
+                "weight": "5.00"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative.land_parcel",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "saturation": "64"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#fafafa"
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#2c2c2c"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#d5d5d5"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "labels",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#ff0000"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "color": "#ed5929"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "labels.text.stroke",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#ffffff"
+            },
+            {
+                "weight": "5.00"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "labels.icon",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#ed5929"
+            },
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#ed5929"
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "labels.text",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "labels.text.stroke",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#ed5929"
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "color": "#d9d9d9"
+            },
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "transit.station",
+        "elementType": "labels.icon",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "transit.station.airport",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            },
+            {
+                "lightness": "4"
+            },
+            {
+                "saturation": "-100"
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#e1e1e1"
+            },
+            {
+                "visibility": "on"
+            }
+        ]
+    }
+] // TODO: replace [] by array from https://snazzymaps.com/
+    };
+
+    var map = new google.maps.Map(document.getElementById('map'), myOptions);
+    var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: "You are here!"
+    });
+    </script>
+
+    <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
