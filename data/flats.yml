@@ -1,0 +1,25 @@
+seb:
+  owner_name: Sebastien Saunier
+  picture: http://placehold.it/150x150
+  owner_picture: http://placehold.it/150x150
+  name: Seb's home
+  summary: Charming room in Montmartre
+  city: Paris, France
+  wifi: true
+  Entire_flat: true
+  category: Popular
+  number_people: 2
+  about: This one bedroom studio lodges 3 people (there's 1 double bed) it is located in the city center, in a calm traditional residential area near the 5th arrondissement
+
+romain:
+  owner_name: Romain Paillard
+  picture: http://placehold.it/150x150
+  owner_picture: http://placehold.it/150x150
+  name: Romain's home
+  summary: Nice flat in Piccadilly
+  city: London, UK
+  wifi: false
+  Entire_flat: false
+  category: Cheap
+  number_people: 3
+  about: This one bedroom studio lodges 2 people (there's 1 double bed) it is located in the city center, in a calm traditional residential area near city´s main Avenue - 3 minutes walk from Sacré Coeur.
